@@ -1,0 +1,89 @@
+{
+  "github_username": "allfocusSS",
+  "gpu_uuid": "GPU-561dd3dd-1373-c02a-71f0-8c2c965c50bc",
+  "instance_seed": 15290349302218891270,
+  "mpi_ranks": 4,
+  "cart_dims": [
+    2,
+    2
+  ],
+  "cart_periods": [
+    false,
+    false
+  ],
+  "global_grid": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "steps": 400,
+  "lambda_damping": 0.15,
+  "max_diffusivity": 0.23999249955313717,
+  "dx": 0.001949317738791423,
+  "dy": 0.001949317738791423,
+  "dt_max": 3.958290002648162e-06,
+  "dt": 3.1666320021185297e-06,
+  "serialized_ms": 1909.156977,
+  "overlapped_ms": 1568.6031890000002,
+  "overlap_speedup": 1.217106397837369,
+  "parity_max_diff": 0.0,
+  "parity_passed": true,
+  "ptx_audit_passed": true,
+  "ptx_instruction_counts": {
+    "st.shared.f64": 5,
+    "ld.shared.f64": 5,
+    "bar.sync": 1,
+    "st.shared.any": 5,
+    "ld.shared.any": 5,
+    "ptx_audit_passed": true
+  },
+  "cuda_event_ms": {
+    "serialized": {
+      "interior_kernel": 0.2520800046622753,
+      "boundary_ring": 0.9479119777679443,
+      "sample_count": 4
+    },
+    "overlapped": {
+      "interior_kernel": 1.2426079995930195,
+      "boundary_ring": 1.0039359778165817,
+      "sample_count": 4
+    }
+  },
+  "energy_trace": {
+    "serialized": {
+      "0": 0.08394178691110264,
+      "100": 0.08392849755088679,
+      "200": 0.08391913187122639,
+      "300": 0.08391048390334661,
+      "400": 0.08390213816199651
+    },
+    "overlapped": {
+      "0": 0.08394178691110264,
+      "100": 0.08392849755088679,
+      "200": 0.08391913187122639,
+      "300": 0.08391048390334661,
+      "400": 0.08390213816199651
+    }
+  },
+  "l2_residual_trace": {
+    "serialized": {
+      "0": 0.0,
+      "100": 1.6845821308125397e-05,
+      "200": 1.6538193507168178e-05,
+      "300": 1.624753146667454e-05,
+      "400": 1.5969433852180116e-05
+    },
+    "overlapped": {
+      "0": 0.0,
+      "100": 1.6845821308125397e-05,
+      "200": 1.6538193507168178e-05,
+      "300": 1.624753146667454e-05,
+      "400": 1.5969433852180116e-05
+    }
+  },
+  "energy_monotonic_nonincreasing": true,
+  "generated_utc": "2026-11-19T07:29:56.345294+00:00"
+}
